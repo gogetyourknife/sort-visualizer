@@ -1,0 +1,10 @@
+.block {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    min-height: 100px;
+    width: 150px;
+    border: 1px;
+    font-weight: 500;
+    font-size: 20px;
+}

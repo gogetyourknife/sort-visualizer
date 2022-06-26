@@ -1,0 +1,8 @@
+.block__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    min-height: 500px;
+    margin: 30px 0 80px;
+    flex-direction: row;
+}

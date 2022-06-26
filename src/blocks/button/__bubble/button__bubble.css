@@ -1,0 +1,13 @@
+.button__bubble {
+    border: 1px #8C65AB solid;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(140, 101, 171, 1) 24%, rgba(140, 101, 171, 0.7259278711484594) 59%, rgba(0, 212, 255, 1) 100%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35);
+    transition: .2s;
+}
+
+.button__bubble:hover {
+    box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
+    background-position: 0 0;
+}

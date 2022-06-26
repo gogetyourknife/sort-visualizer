@@ -7,6 +7,7 @@ function Header() {
     return (
         <header className="header">
             <img className="header__logo" src={header_logo} alt="Логотип" />
+            <a href='https://github.com/gogetyourknife' target='_blank' className="header__link"></a>
         </header>
     );
 

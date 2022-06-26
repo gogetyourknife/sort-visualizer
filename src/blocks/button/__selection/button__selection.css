@@ -1,0 +1,14 @@
+.button__selection {
+    border: 1px #4395BB solid;
+    background: rgb(208, 226, 247);
+    background: linear-gradient(135deg, rgba(208, 226, 247, 1) 0%, rgba(20, 135, 189, 1) 88%);
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35);
+    transition: .2s;
+}
+
+.button__selection:hover {
+    box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
+    background-position: 0 0;
+}

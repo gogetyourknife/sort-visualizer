@@ -33,22 +33,43 @@ function Main() {
         setSort(e.value);
     }
 
+    function customTheme(theme) {
+        return {
+            ...theme,
+            colors: {
+                ...theme.colors,
+                primary: '#6494AA'
+            }
+        }
+    }
+
+    const makeFirstLetterCapital = (str) => {
+        return str.charAt(0).toUpperCase() + str.slice(1) + ' ' + 'Sorting';
+    };
+
+    const renderResult = () => {
+        let result;
+        sort === ''
+            ? (result = "Choose a sorting type")
+            : (result = makeFirstLetterCapital(sort));
+        return result;
+    };
+
     return (
         <section className='main'>
             <div className='main__wrapper'>
                 <Select
                     className='select'
+                    theme={customTheme}
                     defaultValue={sort}
                     options={options}
                     onChange={handleOnChange}
                 />
                 <div className='main__select-wrapper'>
-                    <h1 className='main__select-title'>{sort.charAt(0).toUpperCase() + sort.slice(1) + ' ' + 'Sorting'}</h1>
-                    <div className='main__blocks'>
-                        {bubble && <Bubble />}
-                        {selection && <Selection />}
-                        {quick && <Quick />}
-                    </div>
+                    <h1 className='main__select-title'>{renderResult()}</h1>
+                    {bubble && <Bubble />}
+                    {selection && <Selection />}
+                    {quick && <Quick />}
                 </div>
             </div>
         </section>
